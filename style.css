@@ -13,7 +13,7 @@ body {
    ヘッダー（ブルー系強化版）
    ========================= */
 .site-header {
-  background: #f7fbff; /* 淡いブルーで階層を作る */
+  background: #f7fbff;
   border-bottom: 1px solid #dce9f5;
   padding: 20px 0;
   box-shadow: 0 2px 6px rgba(0, 80, 160, 0.05);
@@ -28,12 +28,11 @@ body {
   align-items: center;
 }
 
-/* ロゴ部分 */
 .logo-area h1 {
   margin: 0;
   font-size: 26px;
   font-weight: 700;
-  color: #004a8f; /* 濃いブルーでブランド感 */
+  color: #004a8f;
 }
 
 .logo-area p {
@@ -100,7 +99,6 @@ body {
   box-shadow: 0 2px 8px rgba(0, 80, 160, 0.06);
 }
 
-/* 見出しデザイン */
 .sidebar h2 {
   font-size: 18px;
   margin-bottom: 14px;
@@ -110,7 +108,6 @@ body {
   padding-left: 10px;
 }
 
-/* リスト */
 .sidebar ul {
   list-style: none;
   padding-left: 0;
@@ -121,7 +118,6 @@ body {
   margin-bottom: 14px;
 }
 
-/* リンクデザイン */
 .sidebar a {
   color: #006dcc;
   text-decoration: none;
@@ -129,7 +125,6 @@ body {
   transition: color 0.2s ease, padding-left 0.2s ease;
 }
 
-/* ホバー時のアニメーション */
 .sidebar a:hover {
   color: #004a99;
   padding-left: 4px;
