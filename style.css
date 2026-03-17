@@ -86,38 +86,53 @@ body {
 }
 
 /* =========================
-   サイドバー
+   サイドバー（ブルー系強化版）
    ========================= */
 .sidebar {
   width: 250px;
-  background: #fff;
-  padding: 20px;
-  border: 1px solid #eee;
-  border-radius: 8px;
+  background: #ffffff;
+  padding: 22px;
+  border: 1px solid #dce9f5;
+  border-radius: 10px;
   height: fit-content;
   position: sticky;
   top: 20px;
+  box-shadow: 0 2px 8px rgba(0, 80, 160, 0.06);
 }
 
+/* 見出しデザイン */
 .sidebar h2 {
   font-size: 18px;
-  margin-bottom: 10px;
+  margin-bottom: 14px;
   color: #004a8f;
+  font-weight: 700;
+  border-left: 4px solid #006dcc;
+  padding-left: 10px;
 }
 
+/* リスト */
 .sidebar ul {
   list-style: none;
   padding-left: 0;
+  margin: 0;
 }
 
 .sidebar li {
-  margin-bottom: 10px;
+  margin-bottom: 14px;
 }
 
+/* リンクデザイン */
 .sidebar a {
   color: #006dcc;
   text-decoration: none;
-  font-weight: bold;
+  font-weight: 600;
+  transition: color 0.2s ease, padding-left 0.2s ease;
+}
+
+/* ホバー時のアニメーション */
+.sidebar a:hover {
+  color: #004a99;
+  padding-left: 4px;
 }
 
 /* =========================
