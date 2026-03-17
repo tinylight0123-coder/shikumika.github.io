@@ -1,5 +1,5 @@
 /* =========================
-   全体設定
+   全体設定（フォント最適化）
    ========================= */
 body {
   font-family: 'Noto Sans JP', sans-serif;
@@ -7,6 +7,28 @@ body {
   padding: 0;
   background: #fafafa;
   color: #333;
+  line-height: 1.75; /* 読みやすい行間 */
+  letter-spacing: 0.3px; /* 文字間を少し広げて視認性UP */
+  font-size: 16px; /* 標準本文サイズ */
+}
+
+/* 見出し階層の最適化 */
+h1 {
+  font-size: 28px;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+h2 {
+  font-size: 22px;
+  font-weight: 700;
+  margin-bottom: 8px;
+}
+
+h3 {
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 6px;
 }
 
 /* =========================
@@ -146,7 +168,7 @@ body {
   border: 1px solid #dce9f5;
   box-shadow: 0 2px 6px rgba(0, 80, 160, 0.05);
   transition: transform 0.25s ease, box-shadow 0.25s ease;
-  min-height: 140px; /* 高さを揃えてプロ品質に */
+  min-height: 140px;
 }
 
 .card:hover {
@@ -165,10 +187,9 @@ body {
 .card p {
   margin: 0 0 14px;
   color: #4a6a85;
-  line-height: 1.6;
+  line-height: 1.7;
 }
 
-/* ボタン風リンク */
 .card a {
   display: inline-block;
   padding: 8px 16px;
@@ -200,6 +221,11 @@ body {
    スマホ対応
    ========================= */
 @media (max-width: 800px) {
+  body {
+    font-size: 15px;
+    line-height: 1.7;
+  }
+
   .header-inner {
     flex-direction: column;
     align-items: flex-start;
