@@ -18,6 +18,7 @@ header {
   justify-content: center;
   gap: 20px;
   padding: 40px;
+  flex-wrap: wrap;
 }
 
 .card {
@@ -27,6 +28,13 @@ header {
   border-radius: 8px;
   width: 250px;
   text-align: center;
+  transition: 0.3s;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
 }
 
 .card a {
@@ -34,4 +42,12 @@ header {
   margin-top: 10px;
   color: #007acc;
   text-decoration: none;
+  font-weight: bold;
+}
+
+@media (max-width: 600px) {
+  .cards {
+    flex-direction: column;
+    align-items: center;
+  }
 }
