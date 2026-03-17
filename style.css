@@ -193,14 +193,33 @@ h3 { font-size: 18px; font-weight: 600; margin-bottom: 6px; }
 }
 
 /* =========================
-   フッター
+   フッター（強化版）
    ========================= */
 .footer {
+  background: #f0f6fc;
+  border-top: 1px solid #dce9f5;
+  padding: 28px 20px;
+  margin-top: 50px;
   text-align: center;
-  padding: 20px;
-  margin-top: 40px;
-  color: #777;
+  color: #4a6a85;
   font-size: 14px;
+  line-height: 1.6;
+}
+
+.footer p {
+  margin: 6px 0;
+}
+
+.footer .footer-links a {
+  margin: 0 10px;
+  color: #006dcc;
+  text-decoration: none;
+  font-weight: 600;
+  transition: color 0.2s ease;
+}
+
+.footer .footer-links a:hover {
+  color: #004a99;
 }
 
 /* =========================
@@ -213,7 +232,6 @@ h3 { font-size: 18px; font-weight: 600; margin-bottom: 6px; }
     line-height: 1.7;
   }
 
-  /* ヘッダー */
   .header-inner {
     flex-direction: column;
     align-items: flex-start;
@@ -232,19 +250,16 @@ h3 { font-size: 18px; font-weight: 600; margin-bottom: 6px; }
     padding-bottom: 2px;
   }
 
-  /* レイアウト */
   .layout {
     flex-direction: column;
   }
 
-  /* サイドバー */
   .sidebar {
     width: 100%;
     position: static;
     margin-bottom: 20px;
   }
 
-  /* カード */
   .card {
     min-height: auto;
     padding: 20px;
@@ -257,5 +272,10 @@ h3 { font-size: 18px; font-weight: 600; margin-bottom: 6px; }
   .card a {
     padding: 8px 14px;
     font-size: 14px;
+  }
+
+  .footer {
+    padding: 24px 16px;
+    font-size: 13px;
   }
 }
