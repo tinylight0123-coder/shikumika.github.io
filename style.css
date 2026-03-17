@@ -82,6 +82,18 @@ h3 { font-size: 18px; font-weight: 600; margin-bottom: 6px; }
 }
 
 /* =========================
+   アイキャッチ画像（追加）
+   ========================= */
+.hero img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-bottom: 1px solid #dce9f5;
+  margin-bottom: 20px;
+  border-radius: 0;
+}
+
+/* =========================
    レイアウト（サイドバー + カード）
    ========================= */
 .layout {
@@ -211,18 +223,6 @@ h3 { font-size: 18px; font-weight: 600; margin-bottom: 6px; }
   margin: 6px 0;
 }
 
-.footer .footer-links a {
-  margin: 0 10px;
-  color: #006dcc;
-  text-decoration: none;
-  font-weight: 600;
-  transition: color 0.2s ease;
-}
-
-.footer .footer-links a:hover {
-  color: #004a99;
-}
-
 /* =========================
    スマホ最適化（強化版）
    ========================= */
@@ -249,6 +249,10 @@ h3 { font-size: 18px; font-weight: 600; margin-bottom: 6px; }
     margin: 0;
     font-size: 14px;
     padding-bottom: 2px;
+  }
+
+  .hero img {
+    margin-bottom: 16px;
   }
 
   .layout {
