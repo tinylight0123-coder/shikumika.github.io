@@ -1,4 +1,6 @@
-/* 全体設定 */
+/* =========================
+   全体設定
+   ========================= */
 body {
   font-family: 'Noto Sans JP', sans-serif;
   margin: 0;
@@ -72,27 +74,9 @@ body {
   width: 100%;
 }
 
-/* スマホ対応 */
-@media (max-width: 800px) {
-  .header-inner {
-    flex-direction: column;
-    align-items: flex-start;
-  }
-
-  .nav {
-    margin-top: 15px;
-  }
-
-  .nav a {
-    margin-left: 0;
-    margin-right: 18px;
-  }
-}
-.nav a:hover {
-  color: #005a99;
-}
-
-/* レイアウト（サイドバー + カード） */
+/* =========================
+   レイアウト（サイドバー + カード）
+   ========================= */
 .layout {
   display: flex;
   gap: 20px;
@@ -101,7 +85,9 @@ body {
   margin: auto;
 }
 
-/* サイドバー */
+/* =========================
+   サイドバー
+   ========================= */
 .sidebar {
   width: 250px;
   background: #fff;
@@ -116,6 +102,7 @@ body {
 .sidebar h2 {
   font-size: 18px;
   margin-bottom: 10px;
+  color: #004a8f;
 }
 
 .sidebar ul {
@@ -128,12 +115,14 @@ body {
 }
 
 .sidebar a {
-  color: #007acc;
+  color: #006dcc;
   text-decoration: none;
   font-weight: bold;
 }
 
-/* カード一覧 */
+/* =========================
+   カード一覧
+   ========================= */
 .cards {
   flex: 1;
   display: flex;
@@ -156,17 +145,20 @@ body {
 
 .card h2 {
   margin-top: 0;
+  color: #004a8f;
 }
 
 .card a {
   display: inline-block;
   margin-top: 10px;
-  color: #007acc;
+  color: #006dcc;
   font-weight: bold;
   text-decoration: none;
 }
 
-/* フッター */
+/* =========================
+   フッター
+   ========================= */
 .footer {
   text-align: center;
   padding: 20px;
@@ -175,7 +167,9 @@ body {
   font-size: 14px;
 }
 
-/* スマホ対応 */
+/* =========================
+   スマホ対応
+   ========================= */
 @media (max-width: 800px) {
   .header-inner {
     flex-direction: column;
@@ -188,7 +182,7 @@ body {
 
   .nav a {
     margin-left: 0;
-    margin-right: 15px;
+    margin-right: 18px;
   }
 
   .layout {
