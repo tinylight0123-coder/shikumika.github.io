@@ -7,11 +7,14 @@ body {
   color: #333;
 }
 
-/* ヘッダー */
+/* =========================
+   ヘッダー（ブルー系強化版）
+   ========================= */
 .site-header {
-  background: #ffffff;
-  border-bottom: 1px solid #eee;
+  background: #f7fbff; /* 淡いブルーで階層を作る */
+  border-bottom: 1px solid #dce9f5;
   padding: 20px 0;
+  box-shadow: 0 2px 6px rgba(0, 80, 160, 0.05);
 }
 
 .header-inner {
@@ -23,41 +26,68 @@ body {
   align-items: center;
 }
 
+/* ロゴ部分 */
 .logo-area h1 {
   margin: 0;
   font-size: 26px;
   font-weight: 700;
+  color: #004a8f; /* 濃いブルーでブランド感 */
 }
 
 .logo-area p {
   margin: 4px 0 0;
-  color: #666;
+  color: #4a6a85;
   font-size: 14px;
-}
-
-.nav a {
-  margin-left: 20px;
-  text-decoration: none;
-  color: #007acc;
-  font-weight: bold;
-  font-size: 15px;
-  transition: color 0.2s ease;
-}
-
-.nav a:hover {
-  color: #005a99;
 }
 
 /* ナビゲーション */
 .nav a {
-  margin-left: 20px;
+  margin-left: 24px;
   text-decoration: none;
-  color: #007acc;
-  font-weight: bold;
+  color: #006dcc;
+  font-weight: 600;
   font-size: 15px;
+  position: relative;
+  padding-bottom: 4px;
   transition: color 0.2s ease;
 }
 
+/* ホバー時の下線アニメーション */
+.nav a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 0%;
+  height: 2px;
+  background: #006dcc;
+  transition: width 0.25s ease;
+}
+
+.nav a:hover {
+  color: #004a99;
+}
+
+.nav a:hover::after {
+  width: 100%;
+}
+
+/* スマホ対応 */
+@media (max-width: 800px) {
+  .header-inner {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .nav {
+    margin-top: 15px;
+  }
+
+  .nav a {
+    margin-left: 0;
+    margin-right: 18px;
+  }
+}
 .nav a:hover {
   color: #005a99;
 }
