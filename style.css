@@ -53,7 +53,6 @@ body {
   transition: color 0.2s ease;
 }
 
-/* ホバー時の下線アニメーション */
 .nav a::after {
   content: "";
   position: absolute;
@@ -131,39 +130,59 @@ body {
 }
 
 /* =========================
-   カード一覧
+   カード一覧（強化版）
    ========================= */
 .cards {
   flex: 1;
   display: flex;
   flex-direction: column;
-  gap: 20px;
+  gap: 22px;
 }
 
 .card {
-  background: #fff;
-  padding: 20px;
-  border-radius: 8px;
-  border: 1px solid #eee;
-  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  background: #ffffff;
+  padding: 24px;
+  border-radius: 12px;
+  border: 1px solid #dce9f5;
+  box-shadow: 0 2px 6px rgba(0, 80, 160, 0.05);
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+  min-height: 140px; /* 高さを揃えてプロ品質に */
 }
 
 .card:hover {
-  transform: translateY(-4px);
-  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  transform: translateY(-6px);
+  box-shadow: 0 6px 16px rgba(0, 80, 160, 0.12);
 }
 
 .card h2 {
   margin-top: 0;
+  margin-bottom: 10px;
   color: #004a8f;
+  font-size: 20px;
+  font-weight: 700;
 }
 
+.card p {
+  margin: 0 0 14px;
+  color: #4a6a85;
+  line-height: 1.6;
+}
+
+/* ボタン風リンク */
 .card a {
   display: inline-block;
-  margin-top: 10px;
-  color: #006dcc;
-  font-weight: bold;
+  padding: 8px 16px;
+  background: #006dcc;
+  color: #ffffff;
+  border-radius: 6px;
+  font-weight: 600;
   text-decoration: none;
+  transition: background 0.2s ease, transform 0.2s ease;
+}
+
+.card a:hover {
+  background: #004a99;
+  transform: translateY(-2px);
 }
 
 /* =========================
@@ -202,5 +221,9 @@ body {
   .sidebar {
     width: 100%;
     position: static;
+  }
+
+  .card {
+    min-height: auto;
   }
 }
